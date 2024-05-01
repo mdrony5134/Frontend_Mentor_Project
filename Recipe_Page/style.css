@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* - Nutmeg: hsl(14, 45%, 36%)
+- Dark Raspberry: hsl(332, 51%, 32%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Rose White: hsl(330, 100%, 98%)
+- Eggshell: hsl(30, 54%, 90%)
+- Light Grey: hsl(30, 18%, 87%)
+- Wenge Brown: hsl(30, 10%, 34%)
+- Dark Charcoal: hsl(24, 5%, 18%) */
+
+body {
+  background-color: hsl(30, 54%, 90%);
+}
+.top_image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.all_content {
+  background-color: hsl(0, 0%, 100%);
+  width: 660px;
+  padding: 40px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.header_content h1 {
+  margin: 25px 0px;
+}
+.header_content p {
+  margin-bottom: 25px;
+}
+.preparation {
+  background-color: hsl(30, 18%, 87%);
+  padding: 20px 30px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+.preparation h3 {
+  color: hsl(332, 51%, 32%);
+  margin-bottom: 10px;
+}
+.preparation ul li {
+  margin-bottom: 10px;
+}
+.ingredients,
+.instruction {
+  padding: 0px 20px;
+}
+.ingredients h2 {
+  color: hsl(14, 45%, 36%);
+  margin-bottom: 20px;
+}
+.ingredients ul li {
+  margin-bottom: 15px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+tr,
+td {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 15px 0px;
+}
+.instruction h2 {
+  color: hsl(14, 45%, 36%);
+  margin: 20px 0px;
+}
+.instruction ol li {
+  margin-bottom: 15px;
+}
+.instruction ol {
+  list-style: none;
+  counter-reset: li;
+}
+.instruction li::before {
+  content: counter(li);
+  color: hsl(14, 45%, 36%);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  font-weight: bold;
+}
+.instruction li {
+  counter-increment: li;
+}
+.nutrition h2{
+  color: hsl(14, 45%, 36%);
+  margin: 20px 0px;
+}
+.nutrition p{
+  margin-bottom: 20px;
+}
